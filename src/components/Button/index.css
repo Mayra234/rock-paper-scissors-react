@@ -1,0 +1,15 @@
+.button-icon {
+  cursor: pointer;
+  margin: 10px;
+  width: 100px;
+  height: 100px;
+  min-width: 70px;
+  min-height: 70px;
+  background: #fffffd;
+  border-radius: 10px;
+  border: 2px solid #f0f4f5;
+}
+
+.button-icon:hover {
+  background: #e7e2da;
+}

@@ -1,0 +1,6 @@
+.board {
+  background: #0481de;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
