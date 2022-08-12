@@ -1,34 +1,31 @@
-import React from "react";
+import React, { useState } from "react";
+import "./index.css";
 import { PlayerMarker } from "../../components/PlayerMarker";
 import { Card } from "../../components/Card";
-import { faHand } from "@fortawesome/free-regular-svg-icons";
-import { faHandScissors } from "@fortawesome/free-regular-svg-icons";
+import {
+  faHand,
+  faHandBackFist,
+  faHandScissors,
+} from "@fortawesome/free-regular-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { Board } from "../../components/Board";
 
 export const Home = () => {
   return (
-    <>
+    <Board>
       <div className="player-content">
         <PlayerMarker name="Tú" numberRound="1" />
         <Card>
-          <FontAwesomeIcon
-            style={{ width: "100px", height: "100px" }}
-            icon={faHand}
-          />
+          <div className="content-icon"></div>
         </Card>
       </div>
-      <div>
-        <PlayerMarker name="vs" />
+      <div className="vs">
+        <p>vs</p>
       </div>
       <div className="opponent-content">
         <PlayerMarker name="pc" numberRound="2" />
-        <Card>
-          <FontAwesomeIcon
-            style={{ width: "100px", height: "100px" }}
-            icon={faHandScissors}
-          />
-        </Card>
+        <Card>{}</Card>
       </div>
-    </>
+    </Board>
   );
 };
