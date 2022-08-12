@@ -11,5 +11,16 @@
 }
 
 .button-icon:hover {
-  background: #fcdeb8;
+  background: #bdecb6;
+  border: none;
+}
+
+.button-icon:hover .icon {
+  color: #fcdeb8;
+}
+
+.icon {
+  color: #a5855e;
+  width: 60px;
+  height: 60px;
 }
