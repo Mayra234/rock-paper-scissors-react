@@ -5,6 +5,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 export const ButtonIcon = ({
   icon = "",
   onClick = "",
+  className = "",
   id = "",
   value = "",
 }) => {
@@ -16,7 +17,7 @@ export const ButtonIcon = ({
       className="button-icon"
       value={value}
     >
-      <FontAwesomeIcon className="icon" icon={icon} />
+      <FontAwesomeIcon className={"icon " + className} icon={icon} />
     </button>
   );
 };
