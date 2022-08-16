@@ -16,11 +16,11 @@
 }
 
 .button-icon:hover .icon {
-  color: #fcdeb8;
+  color: #a5855e;
 }
 
 .icon {
-  color: #a5855e;
+  color: #fcdeb8;
   width: 60px;
   height: 60px;
 }
