@@ -9,7 +9,16 @@
   align-items: center;
 }
 
-.icon-board {
-  width: 200px;
-  height: 200px;
+@media (max-width: 768px) {
+  .sidebar {
+    flex-direction: row;
+    max-width: 100%;
+    max-height: 200px;
+  }
+}
+
+@media (max-width: 500px) {
+  .sidebar {
+    max-height: 130px;
+  }
 }

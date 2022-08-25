@@ -1,3 +1,8 @@
+@font-face {
+  font-family: "dyn";
+  src: url("./assets/fonts/dynaPuff/DynaPuff-VariableFont_wdth\,wght.ttf");
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -5,20 +10,28 @@
 }
 
 body,
-html {
+html,
+#root {
   height: 100%;
   width: 100%;
+  overflow: hidden;
 }
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "silk";
 }
 
 p {
   margin: 10px;
   color: #fff;
-  font-size: 20px;
+  font-size: 40px;
   text-align: center;
   font-weight: 500;
   text-transform: uppercase;
+}
+
+@media (max-width: 500px) {
+  p {
+    font-size: 25px;
+  }
 }
