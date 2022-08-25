@@ -1,12 +1,14 @@
 import React from "react";
-import { Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { MainLayout } from "./layouts/MainLayout";
 
 function App() {
   return (
-    <Routes>
-      <Route path="/" element={<MainLayout />} />
-    </Routes>
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
+      <Routes>
+        <Route path="/" element={<MainLayout />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 

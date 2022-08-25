@@ -1,8 +1,12 @@
 {
+  "homepage": "https://Mayra234.github.io/rock-paper-scissors-react",
   "name": "rock-paper-scissors-react",
   "version": "1.0.0",
   "scripts": {
-    "start": "webpack serve",
+    "start": "webpack serve --mode=development",
+    "build:prod": "webpack",
+    "build:dev": "webpack --mode=development",
+    "deploy": "npm run build:prod & gh-pages -d dist",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook"
   },
@@ -19,6 +23,8 @@
     "@storybook/react": "^6.5.10",
     "@storybook/testing-library": "^0.0.13",
     "babel-loader": "^8.2.5",
+    "dotenv-webpack": "^8.0.1",
+    "gh-pages": "^4.0.0",
     "html-loader": "^4.1.0",
     "html-webpack-plugin": "^5.5.0",
     "style-loader": "^3.3.1",
