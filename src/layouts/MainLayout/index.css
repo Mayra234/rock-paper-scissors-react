@@ -35,6 +35,9 @@
 }
 
 @media (max-width: 500px) {
+  .content-layout {
+    flex-direction: column-reverse;
+  }
   .icon-board {
     min-width: 100px;
     min-height: 100px;

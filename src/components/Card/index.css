@@ -6,8 +6,23 @@
   width: 100%;
   max-width: 200px;
   max-height: 200px;
-  background: #fff;
   border-radius: 10px;
+}
+
+.tie {
+  background: yellow;
+}
+
+.won {
+  background: green;
+}
+
+.lost {
+  background: red;
+}
+
+.normal {
+  background: #fff;
 }
 
 @media (max-width: 500px) {
