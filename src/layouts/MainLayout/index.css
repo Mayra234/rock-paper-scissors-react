@@ -34,7 +34,7 @@
   }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 500px) {
   .content-layout {
     flex-direction: column-reverse;
     height: 100%;
