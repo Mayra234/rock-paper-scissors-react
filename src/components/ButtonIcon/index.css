@@ -19,6 +19,12 @@
   color: #a5855e;
 }
 
+.tie .icon,
+.won .icon,
+.lost .icon {
+  color: #efa897;
+}
+
 .icon {
   color: #fcdeb8;
   width: 60px;

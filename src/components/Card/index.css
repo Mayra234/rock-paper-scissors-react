@@ -10,19 +10,15 @@
 }
 
 .tie {
-  background: yellow;
+  background: #ffff8a;
 }
 
 .won {
-  background: green;
+  background: #006414;
 }
 
 .lost {
-  background: red;
-}
-
-.normal {
-  background: #fff;
+  background: #840005;
 }
 
 @media (max-width: 500px) {
