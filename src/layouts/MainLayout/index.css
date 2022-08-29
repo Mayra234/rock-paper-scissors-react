@@ -29,14 +29,15 @@
     height: 40px;
   }
   .icon-board {
-    min-width: 150px;
-    min-height: 150px;
+    min-width: 130px;
+    min-height: 130px;
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 320px) {
   .content-layout {
     flex-direction: column-reverse;
+    height: 100%;
   }
   .icon-board {
     min-width: 100px;
