@@ -20,9 +20,26 @@
   min-height: 200px;
 }
 
+.message {
+  position: absolute;
+  bottom: 60px;
+}
+
+.tie-message {
+  color: #ffff8a;
+}
+
+.lost-message {
+  color: #840005;
+}
+
+.won-message {
+  color: #006414;
+}
+
 @media (max-width: 768px) {
   .content-layout {
-    flex-direction: column;
+    flex-direction: column-reverse;
   }
   .separator {
     width: 100%;
@@ -32,11 +49,13 @@
     min-width: 130px;
     min-height: 130px;
   }
+  .message {
+    font-size: 18px;
+  }
 }
 
 @media (max-width: 500px) {
   .content-layout {
-    flex-direction: column-reverse;
     height: 100%;
   }
   .icon-board {

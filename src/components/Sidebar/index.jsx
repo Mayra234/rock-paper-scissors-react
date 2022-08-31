@@ -7,27 +7,13 @@ export const Sidebar = ({
   options = [],
   onChange = () => {},
 }) => {
-  const [chooseButton, setChooseButton] = useState(0);
-  const [randomPc, setRandomPc] = useState(1);
-
-  const computerChoiceIndex = Math.floor(Math.random() * 3);
-
-  const onClickButton = (index, computerChoiceIndex) => {
-    setChooseButton(index);
-    setRandomPc(computerChoiceIndex);
-  };
-
-  useEffect(() => {
-    onChange(chooseButton, randomPc);
-  }, [chooseButton]);
-
   return (
-    <div className={"sidebar " + className}>
+    <div onChange={onChange} className={"sidebar " + className}>
       {options.map((option, index) => (
         <ButtonIcon
           key={index}
           {...option}
-          onClick={() => onClickButton(index, computerChoiceIndex)}
+          onClick={() => onChange(index, Math.floor(Math.random() * 3))}
         />
       ))}
     </div>
