@@ -1,6 +1,6 @@
 @font-face {
-  font-family: "dyn";
-  src: url("./assets/fonts/dynaPuff/DynaPuff-VariableFont_wdth\,wght.ttf");
+  font-family: "comic";
+  src: url("./assets/fonts/comic/comic-regular.ttf");
 }
 
 * {
@@ -17,8 +17,9 @@ html,
   overflow: hidden;
 }
 
+#root,
 body {
-  font-family: "silk";
+  font-family: "comic";
 }
 
 p {
