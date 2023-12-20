@@ -23,7 +23,7 @@ export const MainLayout = () => {
     if (chooseButton === randomPc) {
       setColorClassPc("tie");
       setColorClassPlayer("tie");
-      setMessage("DRAW");
+      setMessage("¡EMPATE!");
       setClassMessage("tie-message ");
       setcounterPc((prevCounterPc) => prevCounterPc);
       setcounterPlayer((prevCounterPlayer) => prevCounterPlayer);
@@ -34,7 +34,7 @@ export const MainLayout = () => {
     ) {
       setColorClassPc("won");
       setColorClassPlayer("lost");
-      setMessage("YOU LOST");
+      setMessage("¡PERDISTE 🥺!");
       setClassMessage("lost-message ");
       setcounterPc((prevCounterPc) => prevCounterPc + 1);
     } else if (
@@ -44,7 +44,7 @@ export const MainLayout = () => {
     ) {
       setColorClassPc("lost");
       setColorClassPlayer("won");
-      setMessage("YOU WIN");
+      setMessage("¡GANASTE 😀!");
       setClassMessage("won-message ");
       setcounterPlayer((prevCounterPlayer) => prevCounterPlayer + 1);
     }
@@ -67,7 +67,7 @@ export const MainLayout = () => {
       <div className="separator"></div>
       <Board>
         <div className="player-content">
-          <PlayerMarker id="player" name="Human" numberRound={counterPlayer} />
+          <PlayerMarker id="player" name="Humano" numberRound={counterPlayer} />
           <Card className={colorClassPlayer}>
             {chooseButton === 0 && (
               <FontAwesomeIcon className=" icon icon-board" icon={faHand} />
@@ -90,7 +90,7 @@ export const MainLayout = () => {
           <p>vs</p>
         </div>
         <div className="opponent-content">
-          <PlayerMarker id="pc" name="Pc" numberRound={counterPc} />
+          <PlayerMarker id="pc" name="Maquina" numberRound={counterPc} />
           <Card className={colorClassPc}>
             {randomPc === 0 && (
               <FontAwesomeIcon className=" icon icon-board" icon={faHand} />
